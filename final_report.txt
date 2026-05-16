@@ -1,0 +1,14 @@
+=== FINAL ANALYSIS SUMMARY REPORT ===
+
+Level of Similarity: Low (0%)
+
+Observations about common patterns:
+- There are 0 common genetic sequences shared between Northern and Southern regions.
+
+Differences between datasets:
+- Lab A has unique sequences not found in Lab B, and vice versa. Check nc_element files for specifics.
+
+Interpretation of system consistency:
+- BST 1 (Lab A) Total Nodes: 0, Height: 0
+- BST 2 (Lab B) Total Nodes: 5, Height: 5
+- The trees are stable and the custom similarity metric successfully mapped regional overlaps.
