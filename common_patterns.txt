@@ -1,0 +1,3 @@
+cgat - Length: 4
+gcta - Length: 4
+ttga - Length: 4
