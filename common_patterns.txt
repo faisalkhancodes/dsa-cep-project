@@ -1,3 +1,18 @@
-cgat - Length: 4
-gcta - Length: 4
-ttga - Length: 4
+============================================================
+  COMMON GENETIC PATTERNS (found in BOTH Lab A and Lab B)
+  Student : Faisal Khan  |  01-131232-105
+============================================================
+  Format  : SEQUENCE  |  Length
+------------------------------------------------------------
+AAGCTTGC  |  Length: 8
+ACGTATCG  |  Length: 8
+ATCGGCTA  |  Length: 8
+CGTAGCAT  |  Length: 8
+GATCCTAG  |  Length: 8
+GATTACCA  |  Length: 8
+GCATTTAG  |  Length: 8
+TTACGCAG  |  Length: 8
+TTAGCGAT  |  Length: 8
+------------------------------------------------------------
+  Total common sequences : 9
+============================================================
