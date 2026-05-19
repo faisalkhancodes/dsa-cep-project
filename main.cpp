@@ -38,6 +38,13 @@ void printSeparator(char ch = '=', int width = 60) {
   cout << "\n";
 }
 
+// Trims trailing whitespace and carriage returns (\r) from a string
+void trimSequence(string& str) {
+  while (!str.empty() && (str.back() == '\r' || str.back() == ' ' || str.back() == '\t')) {
+    str.pop_back();
+  }
+}
+
 /*
     collectCommonAndUnique
     This function goes through every node in BST1 (in alphabetical order).
@@ -128,6 +135,7 @@ int main() {
   }
   int linesA = 0;
   while (getline(fileA, line)) {
+    trimSequence(line); // remove \r and hidden spaces
     if (!line.empty()) { // skip blank lines
       if (bst1.insert(line)) {
         linesA++;
@@ -147,6 +155,7 @@ int main() {
   }
   int linesB = 0;
   while (getline(fileB, line)) {
+    trimSequence(line); // remove \r and hidden spaces
     if (!line.empty()) {
       if (bst2.insert(line)) {
         linesB++;
