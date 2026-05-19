@@ -35,7 +35,7 @@ private:
     Node* rootNode;   // the starting (top) node of the tree
 
     // These helper functions do the real recursive work (hidden from outside)
-    Node* insertHelper   (Node* node, string val);
+    Node* insertHelper   (Node* node, string val, bool& inserted);
     bool  searchHelper   (Node* node, string val) const;
     int   countHelper    (Node* node)              const;
     int   heightHelper   (Node* node)              const;
@@ -46,7 +46,7 @@ public:
     BST();    // sets up an empty tree
     ~BST();   // cleans up memory when the program ends
 
-    void  insert         (string val);             // add a gene sequence
+    bool  insert         (string val);             // add a gene sequence (returns true if inserted)
     bool  search         (string val) const;       // check if a sequence exists
     int   countNodes     ()           const;       // how many sequences are stored
     int   getHeight      ()           const;       // how tall the tree is

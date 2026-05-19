@@ -42,21 +42,26 @@ Node* BST::getRoot() const {
 
 // ---------------------------------------------------------------
 // insert: adds a new gene sequence to the tree in alphabetical order
+// Returns true if successfully inserted, false if duplicate
 // ---------------------------------------------------------------
-void BST::insert(string val) {
-    rootNode = insertHelper(rootNode, val);
+bool BST::insert(string val) {
+    bool inserted = false;
+    rootNode = insertHelper(rootNode, val, inserted);
+    return inserted;
 }
 
 // This recursive function finds the correct position for the new sequence.
 // If the value is smaller, go left. If larger, go right. If equal, skip (no duplicates).
-Node* BST::insertHelper(Node* node, string val) {
-    if (node == nullptr)
+Node* BST::insertHelper(Node* node, string val, bool& inserted) {
+    if (node == nullptr) {
+        inserted = true;
         return new Node(val);   // empty spot found -- place the new node here
+    }
 
     if (val < node->geneticSequence)
-        node->leftChild  = insertHelper(node->leftChild,  val);  // go left
+        node->leftChild  = insertHelper(node->leftChild,  val, inserted);  // go left
     else if (val > node->geneticSequence)
-        node->rightChild = insertHelper(node->rightChild, val);  // go right
+        node->rightChild = insertHelper(node->rightChild, val, inserted);  // go right
     // if val == node value, do nothing (no duplicate sequences allowed)
 
     return node;
