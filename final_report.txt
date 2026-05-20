@@ -1,62 +1,40 @@
 ============================================================
-         FINAL ANALYSIS SUMMARY REPORT
-         AI-Assisted Genetic Disorder Diagnostic System
-============================================================
-  Project   : CEP - Genetic Sequence Comparison System
-  Course    : CSC-221 - Data Structures & Algorithms
-  Instructor: Engr. Muhammad Nauman  |  Spring-2026
-  Student   : Faisal Khan  |  01-131232-105
+   GENETIC SEQUENCE COMPARISON SYSTEM - OUTPUT
+   Bahria University | CSC-221 | Spring-2026
 ============================================================
 
-------------------------------------------------------------
-  SECTION 1 : STRUCTURAL METRICS
-------------------------------------------------------------
-  BST1 (Lab A - Genomic Research Unit A)
-    Total nodes (unique sequences) : 15
-    Tree height                    : 8
+[BST1 - Lab A]  Total valid sequences: 5
+  Unique sequences : 5  |  Tree height: 5
+  Sequences in sorted order:
+  1. actg
+  2. agct
+  3. cgat
+  4. gcta
+  5. ttga
 
-  BST2 (Lab B - Genomic Research Unit B)
-    Total nodes (unique sequences) : 15
-    Tree height                    : 8
-
+[BST2 - Lab B]  Total valid sequences: 5
+  Unique sequences : 5  |  Tree height: 5
+  Sequences in sorted order:
+  1. acga
+  2. aggt
+  3. cgat
+  4. gcta
+  5. ttga
 ------------------------------------------------------------
-  SECTION 2 : SIMILARITY MEASUREMENT
+  Common sequences        : 3
+  Total unique (union)    : 7
+  Only in Lab A           : 2
+  Only in Lab B           : 2
 ------------------------------------------------------------
-  Method  : Jaccard Similarity Index
-  Formula : Common / (Total_A + Total_B - Common) x 100
-
-  Common sequences      : 9
-  Total unique (union)  : 21
-  Similarity Score      : 42.86%
-  Similarity Level      : Medium
-
-------------------------------------------------------------
-  SECTION 3 : OBSERVATIONS ABOUT COMMON PATTERNS
-------------------------------------------------------------
-  - 9 gene sequence(s) are shared between Lab A and Lab B.
-  - These shared sequences may indicate common genetic markers
-    found in patients across both the Northern and Southern regions.
-  - See common_patterns.txt for the full list with lengths.
-
-------------------------------------------------------------
-  SECTION 4 : DIFFERENCES BETWEEN DATASETS
-------------------------------------------------------------
-  - Lab A has 6 unique sequence(s) not present in Lab B.
-    (see nc_element_bst1.txt)
-  - Lab B has 6 unique sequence(s) not present in Lab A.
-    (see nc_element_bst2.txt)
-  - These differences suggest region-specific genetic variations.
-
-------------------------------------------------------------
-  SECTION 5 : INTERPRETATION OF SYSTEM CONSISTENCY
-------------------------------------------------------------
-  - Both trees were built correctly using alphabetical insertion.
-  - Similarity score: 42.86%  -->  Level: Medium
-  - The datasets have moderate overlap. Some diagnostic
-    models may work cross-regionally with adjustments.
-  - All 4 output files were generated successfully.
-  - No STL containers were used; only raw BST node pointers.
-
+  Similarity Score : 42.86%
+  Similarity Level : Medium
 ============================================================
-  END OF REPORT
+
+  Output files created:
+    >> common_patterns.txt
+    >> nc_element_bst1.txt
+    >> nc_element_bst2.txt
+    >> final_report.txt
 ============================================================
+
+Press Enter to exit...
