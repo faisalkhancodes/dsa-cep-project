@@ -1,10 +1,6 @@
 ============================================================
   SEQUENCES ONLY IN LAB A  (not found in Lab B)
 ============================================================
-AATCGCTA
-ACGTMARS
-CGATAGCT
-CGTTAAGC
-GTACATCG
-TCGAATGC
+actg
+agct
 ============================================================
